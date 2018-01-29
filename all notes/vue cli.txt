@@ -1,0 +1,19 @@
+Installation vue cli
+-----
+$ npm install -g vue-cli
+
+
+Usage 
+-----
+$ vue init <template name> <project name>
+EX. vue init webpack my-first-blog
+
+- webpack
+- webpack-simple - simple webpack + vue-loader setup
+- browserify
+- browserify simple
+- simple
+
+cd my-first-blog
+npm install
+npm run dev

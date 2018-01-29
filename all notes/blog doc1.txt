@@ -1,0 +1,35 @@
+For this blog i am going to talk about how to create a simple blog page with vue client,
+After install node.js, we can create vue client in webpack-simple by typingthe follwoing
+commmand line in the console:
+
+$ vue init wekpack-simple my-first-blog 
+
+In this way we can initalize a new vue project by creating a project folder with name
+'my-first-blog', then we can go to the folder by using 'cd my-first-blog' command line. 
+Inside the folder, we can type command line: 
+
+$ npm install 
+$ npm run dev
+
+Now, we have created our template for our project! There are a lot of files that are created.
+In main.js, this is the file where the whole project starts, and inside of this document we've
+included a file named App.vue. In App file which was created we can do all what we want. Such as
+include more components which we want to import to the main file.
+
+To build a new component, we might want to firstly create a new vue file and then register the file
+to the App.vue file, so we can import and use it. So, how do we do that? 
+
+Let's take a look of a simple structure of a vue file. It consists of parts: template, script,
+and style. In the template, this is where you want your content goes. In script, you have export
+area, this is where you want to make your data and methods, as well as to register components.
+
+After we've created a new file in a folder called components, how could we import it to App.vue?
+Within the script, we can write 'import addBlog from './components/addBlog.vue', and then we can 
+register a new vue addBlog to our app.vue by placing
+
+components:{
+	'add-blog':addBlog
+}
+
+to our export default part. This is the f
+
